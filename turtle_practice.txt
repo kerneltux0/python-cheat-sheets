@@ -1,0 +1,28 @@
+import turtle
+
+my_turtle = turtle.Turtle()
+
+def square(length, angle):
+	for draw_line in range(4):
+		my_turtle.forward(length)
+		my_turtle.right(angle)
+
+## 'square' is a function that calls the series of commands that draws a square
+## 'length' is an argument--in this example, it specifies the length of the sides of the square
+
+for draw_squares in range(100):
+	square(100, 90)
+	my_turtle.right(37)
+
+# this is a for-loop, it performs the indented commands the specified number of times
+# in this example, it draws 4 squares 100 times
+
+
+# my_turtle.forward(50)
+# square(100, 90)
+# my_turtle.forward(50)
+# square(100, 90)
+# my_turtle.forward(50)
+# square(100, 90)
+
+turtle.done()

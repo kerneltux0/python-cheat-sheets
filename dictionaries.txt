@@ -1,0 +1,26 @@
+>>> phone_book = ['123-4567', '456-7890']
+>>> phone_book[0]
+'123-4567'
+>>> ## DICT[key] --> value
+... 
+>>> ## {key1: value1, key2: value2 }
+... 
+>>> 
+>>> phone_book = {'bob': '555-123-4567', 'jimmy': '555-098-7654'}
+>>> 
+
+
+phone_book = 
+{
+	'bob': ['555-123-4567', 'bob@where.com'], 
+	'jimmy': ['555-098-7654', 'jdog@meow.net'],
+
+	}
+
+## phone_book is a dictionary with 2 keys: bob & jimmy
+## both keys point to a value: a list containing their phone number & email
+## you can specify which element you want, here it references the 2nd element in the list 
+## attached to bob (python starts counting @ 0)
+
+phone_book['bob'][1]
+'bob@where.com'

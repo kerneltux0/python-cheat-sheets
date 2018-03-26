@@ -1,0 +1,11 @@
+def is_even(number):
+	if number % 2 == 0:
+		print(number)
+	else:
+		print('WRONG!')
+
+#for number in range(10):
+#	if number % 2 == 0
+#	print(number)
+
+is_even(5)

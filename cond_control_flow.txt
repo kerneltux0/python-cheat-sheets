@@ -1,0 +1,39 @@
+>>> bob_hours = 40
+>>> if bob_hours > 39:
+...     print('worked OT')
+... 
+worked OT
+>>> john_hw = True
+>>> john_trash = True
+>>> if john_hw and john_trash:
+...     print('play time')
+... 
+play time
+>>> ## rock paper scissors
+... 
+>>> human = 'rock'
+>>> pc = 'scissors'
+>>> if human == 'rock' and pc == 'scissors':
+...     human_score = 1
+... 
+>>> pc = 'bananas'
+>>> if human == 'rock' and pc == 'scissors':
+...     human_score = 1
+... elif human == 'rock' and pc == 'bananas':
+...     pc_score = 0
+...     human_score = 0
+...     print('Only valid answer is rock, paper, or scissors.')
+... 
+Only valid answer is rock, paper, or scissors.
+>>> ## if condition --> True:
+... ##  this code block runs
+... 
+>>> computer = 'rock'
+>>> if computer != 'rock' or computer != 'paper' or computer != 'scissors':
+...     print('WRONG ANSWER')
+... 
+WRONG ANSWER
+>>> if computer != 'rock' and computer != 'paper' and computer != 'scissors':
+...     print('WRONG ANSWER')
+... 
+>>> 

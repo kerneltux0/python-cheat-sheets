@@ -1,0 +1,58 @@
+###	Some of these commands may need print(command)	###
+
+import pandas	#loads the pandas module
+pandas.read_csv('<file-name.csv>', sep=',')	#loads a csv file & specifies comma as delimiter
+data = pandas.read_csv('<file-name.csv>', sep=',')	#sets pandas reading csv file to variable 'data'
+
+data.head()	#shows top few rows of the data table
+type(data)	#shows the data type of the variable
+data.shape	#shows number of rows & columns
+data.columns	#shows column names of data set
+data.dtypes	#shows data type of each column
+data['column name']	#shows contents of that column
+subset = data[['column1', 'column2']]	#sets the contents of both columns to variable 'subset'
+
+## the double set of brackets indicates that this is a list/index
+
+data[[1]]	#shows the contents of the 2nd column (python starts @ 0)
+data[[1, 2, 3]]	#shows contents of 2-4th column
+data[list(range(1, 3))]	#shows contents of 2nd & 3rd columns
+data.loc[0]	#shows contents of first row
+data.shape[0]	#shows number of rows
+data.loc[data.shape[0]-1]	#shows contents of the last row in data set
+
+## data.ix[rows, columns]
+data.ix[0, 'column name']	#shows content of that column in the 1st row
+data.ix[[0, 1, 2], [3, 4]]	#shows contents of 2nd & 3rd column in the first 3 rows
+
+data.groupby('column1')		#sorts data according to that column
+data.groupby('column1')['column2']	#sorts data according to 1st column & pulls data from 2nd column
+data.groupby('column1')['column2'].mean()	#takes avg of data taken from both columns
+data.groupby(['column1', 'column2'])	#sorts data according to first 2 columns
+
+## groupby returns a series data type, appending ".plot()" shows a graph
+
+data1 = pandas.read_csv('file1.csv')
+data2 = pandas.read_csv('file2.csv')
+data3 = pandas.read_csv('file3.csv')
+
+pandas.concat([data1, data2, data3])	#concats data by row (i.e. stacks vertically)
+pandas.concat([data1, data2, data3], axis=1)	#concats data by column (i.e. stacks horizontally)
+
+data1.columns = ['columnXYZ', 'pizza', 'ice-cream']	#renames columns in data set
+data1.to_csv('new_filename.csv')	#creates new csv from data set
+
+## "NaN" in python means there's a missing value
+
+data4 = pandas.read_csv('file4.csv')
+data5 = pandas.read_csv('file5.csv')
+
+data4.merge(data5, left_on='column1', right_on='column2')
+## "left" refers to the 1st data set (data4 in this case), "right" refers to 2nd data set
+## matches data according to column1 of data4 & column2 of data5
+## can only merge 2 data sets at the same time
+
+panda.isnull(input)		#checks if input is a missing/null value
+pandas.read_csv('file9.csv', keep_default_na=False)	#replaces NaN's with a blank string
+
+

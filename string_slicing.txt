@@ -1,0 +1,76 @@
+data = 'Ubuntu | 16.04 | KDE'
+distro = data[:data.index('|')]
+print(distro)
+
+## data.index('|') pulls the string assigned to the variable 'data' & returns the char number 
+## of the pipe
+
+version = data[8:]
+version_num = version[:version.index('|')]
+print(version_num)
+
+desktop_env = version[8:]
+print(desktop_env)
+
+## greeting = 'hello'
+
+## def greeting_rev():
+	print(greeting[4])
+	print(greeting[3])
+	print(greeting[2])
+	print(greeting[1])
+	print(greeting[0])
+
+## greeting_rev()
+
+data.find('|')
+
+groceries = ['apple', 'banana', 'oranges']
+groceies0
+groceries[0]
+'apple'
+'what-is-going-on'.split()
+['what-is-going-on']
+'what-is-going-on'.split('-')
+['what', 'is', 'going', 'on']
+'Ubuntu|18.04|KDE'.split()
+['Ubuntu|18.04|KDE']
+'Ubuntu|18.04|KDE'.split('|')
+['Ubuntu', '18.04', 'KDE']
+>>> groceries.split(',')
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'list' object has no attribute 'split'
+>>> data = ['Ubuntu|16.04|Gnome']
+>>> data.split('|')
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'list' object has no attribute 'split'
+>>> data = 'Ubuntu|16.04|Gnome'
+>>> data.split('|')
+['Ubuntu', '16.04', 'Gnome']
+>>> data.split(0)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: must be str or None, not int
+>>> 
+>>> data = 'Ubuntu|18.04|XFCE'
+>>> data.split('|')
+['Ubuntu', '18.04', 'XFCE']
+>>> data
+'Ubuntu|18.04|XFCE'
+>>> numbers = [1, 2, 3, 4]
+>>> numbers.append(5)
+>>> numbers
+[1, 2, 3, 4, 5]
+>>> numbers.split(',')
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'list' object has no attribute 'split'
+>>> numbers.split()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'list' object has no attribute 'split'
+>>> ## split doesn't work for a list, only strings
+... 
+>>> 

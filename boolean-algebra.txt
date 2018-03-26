@@ -1,0 +1,53 @@
+>>> ## if 'condition' --> True/False
+... ##  then 'action'
+... 
+>>> if True:
+...     print('hello')
+... 
+hello
+>>> if False:
+...     print('yo')
+... 
+>>> ## comparative functions
+... ##  ==, <, >, <=, >=, !=
+... ##  equals, less-than, greater-than, less-than or equal, greater-than or equal, not equal
+... 
+>>> john_hours_worked = 40
+>>> john_hours_worked > 50
+False
+>>> 
+>>> long_division = False
+>>> pizza = True
+>>> pizza and long_division
+False
+>>> poison = False
+>>> long_division and poison
+False
+>>> ice_cream = True
+>>> pizza and ice_cream
+True
+>>> False and False
+False
+>>> True and False
+False
+>>> True and True
+True
+>>> 
+>>> pizza = True
+>>> poison = False
+>>> taxes = False
+>>> sex = True
+>>> False or True
+True
+>>> False or False
+False
+>>> pizza or taxes
+True
+>>> poison or taxes
+False
+>>> sex or pizza
+True
+>>> ## with OR, only one element needs to evaluate as True for the operation to evaluate as 
+True
+... 
+>>> 
